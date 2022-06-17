@@ -5,6 +5,8 @@ import {Header} from "./NestedComponets/Header/Header";
 import {Map} from "./MethodMap/Map";
 import {Button} from "./Button/Button";
 import {Filter} from "./Filter/Filter";
+import {UseState} from "./UseState/UseState";
+import {Input} from "./Input/Input";
 
 function App() {
 
@@ -22,14 +24,16 @@ function App() {
         {id: 11, name: "Christopher", age: 100},
     ]
 
-  return (
+    return (
         <div className="App">
-        <Header name={'beka'}/>
-        <Map students={students}/>
-        <Button />
-        <Filter />
-    </div>
-  );
+            <Header name={'beka'}/>
+            <Map students={students}/>
+            <Button/>
+            <Filter/>
+            <UseState/>
+            <Input />
+        </div>
+    );
 }
 
 export default App;
